@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --background: 0 0 100%;
+    --foreground: 222 47% 11%;
+    --muted: 210 20% 96%;
+    --muted-foreground: 215 16% 47%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --primary: 188 90% 35%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 210 20% 96%;
+    --secondary-foreground: 222 47% 11%;
+    --accent: 188 90% 35%;
+    --accent-foreground: 0 0% 100%;
+    --ring: 188 90% 35%;
+    --radius: 1rem;
+  }
+  html.dark {
+    --background: 222 47% 7%;
+    --foreground: 210 40% 96%;
+    --primary: 188 85% 45%;
+    --primary-foreground: 222 47% 7%;
+    --ring: 188 85% 45%;
+  }
+  body {
+    background: hsl(var(--background));
+    color: hsl(var(--foreground));
+    
+  }
+
+  
+
+
+  html.dark * {
+    animation: glowDark 0.4s ease;
+  }
+  
+  html.dark *  {
+    animation: fadeDark 0.4s ease;
+  }
+  @keyframes fadeDark {
+    from {
+      opacity: 0.5;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  
+  
+}
