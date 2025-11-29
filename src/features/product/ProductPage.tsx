@@ -9,12 +9,11 @@ import { toast } from "sonner";
 import ProductCardSkeleton from "@/components/ui/ProductCardSkeleton";
 
 
-
-// export interface ReviewType {
-//   id: number;
-//   rating: number;
-//   comment: string;
-// }
+interface Review {
+  id?: number;
+  comment: string;
+  rating: number;
+}
 
 export default function ProductPage() {
   const { id } = useParams();
@@ -53,6 +52,7 @@ export default function ProductPage() {
       </div>
     );
 
+    
   return (
     <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 p-6">
 
@@ -105,7 +105,7 @@ export default function ProductPage() {
           <div className="flex flex-col gap-3 mt-4">
             <h2 className="text-xl font-bold">{t("reviews") || "Reviews"}:</h2>
 
-            {data.reviews.map((review, index) => (
+            {data.reviews.map((review: Review, index: number) => (
               <div
                 key={review.id || index}
                 className="border border-border rounded-lg p-4 
