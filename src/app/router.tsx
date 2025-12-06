@@ -1,4 +1,3 @@
-// import React from "react";
 import { createBrowserRouter } from "react-router-dom";
 
 import  Layout   from "./shell/Layout";
@@ -16,5 +15,5 @@ export const router = createBrowserRouter([
     { path: "checkout", element: <CheckoutPage /> },
   ]}
 ], {
-  basename: "/e-commerce/"
+  basename: import.meta.env.BASE_URL
 });
