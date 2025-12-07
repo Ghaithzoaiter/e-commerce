@@ -87,7 +87,7 @@ export default function CatalogPage() {
         <div className="space-y-1">
           <label className="font-semibold">{t("categories")}</label>
           <select
-            className="bg-secondary text-foreground border border-border rounded-lg px-4 py-2 w-full animate-fadeEnter"
+            className="bg-secondary text-foreground border border-border rounded-lg px-4 py-2 w-full animate-fadeEnter bg-[#46797A]"
             value={category}
             onChange={(e) => setCategory(e.target.value)}
           >

@@ -3,13 +3,16 @@ import { useCart } from "@/stores/cart";
 import { useTranslation } from "react-i18next";
 import { useState, useEffect } from "react";
 import { Menu, Sun, Moon, Globe } from "lucide-react";
+<<<<<<< HEAD
 //import i18n from "@/i18n/indesx";
+=======
+>>>>>>> cc18709 (minor adjustments)
 import { Toaster } from "sonner";
+
 
 export default function Layout() {
   const count = useCart((s) => s.items.reduce((a, x) => a + x.qty, 0));
   const { t, i18n } = useTranslation();
-
   const getInitialTheme = () => {
     const saved = localStorage.getItem("theme");
     if (saved === "dark" || saved === "light") return saved;
@@ -33,6 +36,8 @@ export default function Layout() {
   const [langOpen, setLangOpen] = useState(false);
 
   const changeLang = (lng: "ar" | "en") => {
+    
+
     i18n.changeLanguage(lng);
     document.dir = lng === "ar" ? "rtl" : "ltr";
     localStorage.setItem("lang", lng);

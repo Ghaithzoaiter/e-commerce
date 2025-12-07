@@ -8,6 +8,7 @@ import CheckoutPage from "@/features/checkout/CheckoutPage";
 
 export const router = createBrowserRouter(
   [
+    
     {
       path: "/",
       element: <Layout />,

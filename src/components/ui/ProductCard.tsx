@@ -30,7 +30,7 @@ export default function ProductCard({ product }: { product: ProductType }) {
         transition hover:shadow-xl
       "
     >
-      {/* صورة المنتج */}
+
       <Link to={`/products/${product.id}`}>
         <img
           src={product.thumbnail}

@@ -37,9 +37,7 @@ export default function CheckoutPage() {
 
   const onSubmit = (data: FormType) => {
     console.log("Order Data:", data);
-
     clear();
-
     setSuccess(true);
   };
 
