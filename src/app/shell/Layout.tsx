@@ -3,10 +3,6 @@ import { useCart } from "@/stores/cart";
 import { useTranslation } from "react-i18next";
 import { useState, useEffect } from "react";
 import { Menu, Sun, Moon, Globe } from "lucide-react";
-<<<<<<< HEAD
-//import i18n from "@/i18n/indesx";
-=======
->>>>>>> cc18709 (minor adjustments)
 import { Toaster } from "sonner";
 
 
