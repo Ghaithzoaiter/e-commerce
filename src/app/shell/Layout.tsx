@@ -3,7 +3,7 @@ import { useCart } from "@/stores/cart";
 import { useTranslation } from "react-i18next";
 import { useState, useEffect } from "react";
 import { Menu, Sun, Moon, Globe } from "lucide-react";
-// import i18n from "@/i18n/indesx";
+import i18n from "@/i18n/indesx";
 import { Toaster } from "sonner";
 
 export default function Layout() {
